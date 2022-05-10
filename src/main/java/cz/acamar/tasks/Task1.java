@@ -17,6 +17,7 @@ public class Task1 {
      * @return - the length of the last word in the string.
      */
     public int lengthOfLastWord(String str) {
-        return 0;
+        String[] stringArr = str.split("\\s+");
+        return stringArr[stringArr.length - 1].length();
     }
 }

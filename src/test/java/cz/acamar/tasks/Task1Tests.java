@@ -21,7 +21,9 @@ public class Task1Tests {
     private static Stream<Arguments> stringsAndLastWordLength() {
         return Stream.of(
                 Arguments.of("Hello world", 5),
+                Arguments.of("   TESt  ", 4),
                 Arguments.of("   fly me   to   the moon  ", 4),
+                Arguments.of("   add new own     test                         ", 4),
                 Arguments.of("William Shakespeare was an English   playwright", 10)
         );
     }
